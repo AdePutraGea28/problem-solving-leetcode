@@ -1,7 +1,8 @@
+// this is called Kadane's Algorithm
+
 function maxSubArray(nums) {
-  // this is called Kadane's Algorithm
-  let currentMax = nums[0]; // 3 3 7
-  let globalMax = nums[0]; // 3 3
+  let currentMax = nums[0];
+  let globalMax = nums[0];
 
   for (let i = 1; i < nums.length; i++) {
     //   console.log(currentMax);
@@ -11,7 +12,7 @@ function maxSubArray(nums) {
     }
   }
 
-    return globalMax;
+  return globalMax;
 }
 
 console.log(maxSubArray([2, 1, -2, 3, 2]));
@@ -30,4 +31,17 @@ console.log(maxSubArray([3, -10, 4]));
 //     max = Math.max(nums[i], max);
 //   }
 //   return max;
+// }
+
+// function maxSubArray(nums) {
+//   // this is called Kadane's Algorithm
+//   let arrMax = [];
+//   arrMax.push(nums[0]);
+
+//   for (let i = 1; i < nums.length; i++) {
+//     let currentMax = Math.max(nums[i], arrMax[i - 1] + nums[i]);
+//     arrMax.push(currentMax);
+//   }
+
+//   return Math.max.apply(null, arrMax);
 // }
