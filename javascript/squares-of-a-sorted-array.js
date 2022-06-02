@@ -1,3 +1,7 @@
+// teknik sorting ini hanya berlaku bagi array yang awalnya memang sudah tersorting
+// hanya saja sewaktu di square nilai dari arraynya berubah dan tidak tersorting
+// sehingga harus di sorting lagi
+
 function sortedSquares(nums) {
   let result = [];
   let leftPointer = 0;
