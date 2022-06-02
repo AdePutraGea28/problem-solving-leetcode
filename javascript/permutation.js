@@ -8,6 +8,7 @@ function permutation(nums) {
 }
 
 function backtracking(nums, used, result, temp) {
+  // this condition for stop recursif from infinity looping
   if (temp.length === nums.length) {
     result.push(Array.from(temp));
   }
