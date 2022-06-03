@@ -13,4 +13,5 @@ function reverseStr(arrStr) {
   return arrStr;
 }
 
-console.log(reverseStr(['h', 'e', 'l', 'l', 'o']));
+console.log(reverseStr(['h', 'e', 'l', 'l', 'o'])); // ["o","l","l","e","h"]
+console.log(reverseStr(['H', 'a', 'n', 'n', 'a', 'h'])); // ["h","a","n","n","a","H"]
